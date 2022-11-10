@@ -40,6 +40,22 @@ app.get("/api/automobiles/cars/:id", (req, res) => {
   getId();
 });
 
+app.post("/api/automobiles/cars", (req, res) => {
+  async function inputCar() {
+    try {
+      let queryString = `INSERT INTO cars (manufacture, model, color, year, MSRP) 
+      VALUES ('${req.body.manufacture}','${req.body.model}', '${req.body.color}', 
+      '${req.body.year}', '${req.body.MSRP}') RETURNING *`;
+      const result = await pool.query(queryString);
+      console.log(result);
+      res.send(result.rows);
+    } catch (e) {
+      console.error(e.stack);
+    }
+  }
+  inputCar();
+});
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });

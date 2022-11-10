@@ -3,3 +3,15 @@ GET http://localhost:3000/api/automobiles/cars
 
 ###
 GET http://localhost:3000/api/automobiles/cars/3
+
+###
+POST http://localhost:3000/api/automobiles/cars/
+Content-Type: application/json
+
+{
+"manufacture": 2,
+"model": "civic",
+"color": "grey", 
+"year": 2021, 
+"MSRP": 27000
+}
