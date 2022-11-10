@@ -1,0 +1,51 @@
+body {
+  background-color: grey;
+}
+
+#header {
+  background-color: orange;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#carContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 90vw;
+}
+
+#carDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 100px;
+  background-color: orange;
+  margin-top: 30px;
+  margin-right: 25px;
+}
+
+#outList {
+  display: flex;
+  flex-wrap: wrap;
+  height: 125px;
+}
+
+#list {
+  height: 40px;
+}
