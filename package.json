@@ -1,0 +1,26 @@
+{
+  "name": "full_stack_single_page_app_rep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ozi-b/Full_Stack_Single_Page_App_Rep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ozi-b/Full_Stack_Single_Page_App_Rep/issues"
+  },
+  "homepage": "https://github.com/Ozi-b/Full_Stack_Single_Page_App_Rep#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  }
+}
